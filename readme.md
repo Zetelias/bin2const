@@ -121,3 +121,18 @@ const TARGET = new Uint8Array([
     /* [All the other bytes...] */
  ]);
 ```
+### "go" | "golang" | "go-lang" | "go_lang" 
+This converts a file into a Go []byte, example:
+```go
+var TARGET = []byte{
+    0x2f, 0x74, 0x61, 0x72,
+    /* [All the other bytes...] */
+ };
+```
+### "java" | "java8" | "java-8" | "java_8" 
+This converts a file into a Java byte[], example:
+```java
+public static final byte[] TARGET = new byte[] {
+    0x2f, 0x74, 0x61, 0x72,
+    /* [All the other bytes...] */
+ };

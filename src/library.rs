@@ -239,7 +239,6 @@ pub fn binary_to_javascript_const(binary: &[u8], name: &str, tab_size: usize) ->
     out
 }
 
-
 /// Converts an array of bytes to a Go constant.
 /// For exemple, with binary = &[0x00, 0x01, 0x02, 0x03] and name = "test_txt", the function returns:
 /// var TEST_TXT = []byte{
@@ -248,10 +247,7 @@ pub fn binary_to_javascript_const(binary: &[u8], name: &str, tab_size: usize) ->
 pub fn binary_to_go_const(binary: &[u8], name: &str, tab_size: usize) -> String {
     let mut out = String::new();
     let generated_tabs = " ".repeat(tab_size);
-    out.push_str(&format!(
-        "var {} = []byte{{\n{}",
-        name, generated_tabs
-    ));
+    out.push_str(&format!("var {} = []byte{{\n{}", name, generated_tabs));
     for (i, byte) in binary.iter().enumerate() {
         out.push_str(&format!("0x{:02x}", byte));
         if i < binary.len() - 1 {
