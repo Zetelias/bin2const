@@ -29,6 +29,15 @@ const SOUND: [u8; 1234] = [
 Then, I would just have to make the constant public,
 import the constant, and I could use it in my program.
 
+## Installation
+Run the python script to automatically compile
+bin2const and add the executable to your PATH,
+the script currently works for Windows, Linux
+and MacOS.
+
+Otherwise, compile the executable with cargo
+and add it to your PATH manually.
+
 ## Why ?
 Because sometimes you want to load your files without
 suffering file IO, or you want to reduce the size of
