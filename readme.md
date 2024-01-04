@@ -42,7 +42,7 @@ There are multiple reasons not to but the most notable for me are:
 - Decreases maintainability
 - Decreases convenience, you need to rerun the command every time
   you change the file you want to convert. For example, it's an
-  issue if you want to use this for a game for example, and you want to 
+  issue if you want to use this for a game, and you want to 
   change the sprites often
 
 ## Sharp edges
@@ -84,7 +84,7 @@ const unsigned char TARGET[] = {
  };
  ```
 ### "cdef" | "c-def" | "c_def" | "def" | "define" | "cppdef"
-This converts a file into a C/C++ #define, example:
+This converts a file into a C/C++ multiline #define, example:
 ```c
 #define TARGET_SIZE 1234
 #define TARGET {0x2f, 0x74, 0x61, 0x72, /* [All the other bytes...] */ }
