@@ -30,13 +30,9 @@ Then, I would just have to make the constant public,
 import the constant, and I could use it in my program.
 
 ## Installation
-Run the python script to automatically compile
-bin2const and add the executable to your PATH,
-the script currently works for Windows, Linux
-and MacOS.
+Run `compile_and_set_path.bat` on Windows and `install.sh` on Linux.
 
-Otherwise, compile the executable with cargo
-and add it to your PATH manually.
+You can also run `cargo build --release` and add it to your PATH manually.
 
 ## Why ?
 Because sometimes you want to load your files without
